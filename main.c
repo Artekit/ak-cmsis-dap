@@ -39,6 +39,8 @@
 #include "defs.h"
 #include "dap_debug.h"
 
+const char version[16] __attribute__ ((section(".version"), used )) = DAP_FW_VER;
+
 #define CMSIS_DAP_MAX_PACKETS	DAP_PACKET_COUNT
 #define CMSIS_DAP_PACKET_SIZE	DAP_PACKET_SIZE
 

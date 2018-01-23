@@ -57,6 +57,8 @@ SECTIONS
     __Vectors_End = .;
     __Vectors_Size = __Vectors_End - __Vectors;
     __end__ = .;
+    
+	KEEP(*(.version))
 
     *(.text*)
 
