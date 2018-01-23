@@ -17,6 +17,7 @@
 #ifndef __DAP_H__
 #define __DAP_H__
 
+#define DAP_FW_VER      "1.1"   // Firmware Version
 
 // DAP Command IDs
 #define ID_DAP_Info                     0x00

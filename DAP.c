@@ -18,9 +18,6 @@
 #include "DAP_config.h"
 #include "DAP.h"
 
-#define DAP_FW_VER      "1.0"   // Firmware Version
-
-
 #if (DAP_PACKET_SIZE < 64)
 #error "Minimum Packet Size is 64"
 #endif
