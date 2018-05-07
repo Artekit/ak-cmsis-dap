@@ -17,7 +17,7 @@
 #ifndef __DAP_H__
 #define __DAP_H__
 
-#define DAP_FW_VER      "1.1"   // Firmware Version
+#define DAP_FW_VER      "1.2"   // Firmware Version
 
 // DAP Command IDs
 #define ID_DAP_Info                     0x00
@@ -204,7 +204,7 @@ extern void     DAP_Setup (void);
 #define DELAY_SLOW_CYCLES       3       // Number of cycles for one iteration
 #endif
 static __forceinline void PIN_DELAY_SLOW (uint32_t delay) {
-  int32_t count;
+  volatile int32_t count;
 
   count = delay;
   while (--count);
